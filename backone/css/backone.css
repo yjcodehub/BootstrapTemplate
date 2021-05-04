@@ -1,0 +1,103 @@
+/*------------
+	Font CSS
+------------*/
+@font-face{src:url(../fonts/Lato-Bold.ttf); font-family: latoBold;}
+@font-face{src:url(../fonts/Lato-Light.ttf); font-family: latoLight;}
+@font-face{src:url(../fonts/Lato-Italic.ttf); font-family: latoItalic;}
+@font-face{src:url(../fonts/Lato-Regular.ttf); font-family: latoRegular;}
+/*---------
+	General CSS
+---------*/
+
+.container{max-width: 960px;font-family: latoRegular}
+h1{font-size: 55px;margin-bottom: 0;}
+h2{font-size: 28px; color: #444444;margin-bottom: 0;}
+h3{font-size: 20px;margin-bottom: 0;}
+h4{font-size: 18px;margin-bottom: 0;}
+h5{font-size: 14px;margin-bottom: 0;}
+p{font-size: 14px; color: #444444;margin-bottom: 0;}
+
+/*---------------
+	Main CSS
+-------------*/
+
+/*--------
+	Header
+--------++*/
+nav.navbar{padding: 1.5em 0;background-color: #fff;border-bottom: 1px solid #ccc;box-shadow: 0 1px 20px #ccc;}
+nav.navbar .navbar-nav .nav-item .nav-link{padding: .9em;}
+nav.navbar .navbar-nav .nav-item .nav-link:hover{background-color: #1bbc9b;color: #fff;}
+
+/*--------
+	Banner
+--------++*/
+.banner{margin-top: 7.31em;position: relative;}
+.banner .content{position: absolute;top: 4.4em;left: 31%;font-family: latoLight;}
+.banner .content h1{}
+.banner .content p{font-size: 18px;color: #fff;padding: 2.5em 0 2.8em;}
+.banner .content .btn{padding: 14px;background-color: #1bbc9b;color: #fff;font-size: 13px;font-weight: bold;letter-spacing: 2px;margin-bottom: 2.6em;}
+
+/*--------+
+	Portfolio
+--------+++*/
+.portfolio{padding: 3.3em 0 3em;}
+.portfolio p{padding: 1.2em 0 2.125em;font-size: 16px;}
+.portfolio .nav{margin-bottom: 3rem;}
+.portfolio .nav .nav-item{padding: 0.9em 0.7em;background-color: #1bbc9b;color: #fff;margin: 0 0.5em;letter-spacing: 2px;font-family: latoBold;font-size: 13px;}
+
+/*--------+
+	About
+--------++*/
+.about{background-color: #16a086;padding: 3.5em 0 4.5em;}
+.about .card .card-body h4{margin: 1.2em 0 0.5em}
+.about .card .card-body p.mb-4{font-style: oblique;}
+.about .card .socialMedia{display:none; background-color: #16a086;width: fit-content;align-self: center;position: absolute;top: 6.5rem;}
+.about .card:hover .socialMedia{display: block;background-color: rgba(22, 160, 134, 0.7);}
+
+/*--------
+	Contacts
+---------*/
+.contact{background-color: #ecf0f1;padding: 3.3125rem 0 3.75em;}
+.contact form button.btn{background-color: #16a086;color: #fff;font-size: 13px;padding: 1rem 1.9rem;font-family: latoBold;letter-spacing: 2px;}
+.contact .info .col-11{margin-left: -1em;}
+
+/*----------
+	Footer
+-----------*/
+.footer{padding: 1.5em 0;background-color: #2d3e50;}
+
+/*-------------
+	Media Queries
+--------------*/
+@media screen and (max-width: 1199px){
+.banner .content{left: 22%;}
+}
+@media screen and (max-width: 1000px){
+	.banner .content{left: 17%;}
+}
+@media screen and (max-width: 800px){
+	.banner .content{left: 10%;}
+}
+@media screen and (max-width: 660px){
+	.banner .content{left: 2%;}
+}
+@media screen and (max-width: 575px){
+.about .card .socialMedia{display:block; background-color: rgb(22, 160, 134);align-self: center;position: static;width: 100%;text-align: center;}
+}
+
+/*
+	students ->
+				studId
+				studName
+				studEmail
+				studMobile
+				college_id
+
+	college -> 
+				collegeId
+				collegeName
+
+	city ->
+				cityId
+				cityName
+*/
